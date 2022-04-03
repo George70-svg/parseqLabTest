@@ -1,0 +1,423 @@
+.variantHeader {
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #A5A5A5;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    color: #00293E;
+
+}
+
+.openButton {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #00293E;
+    margin-bottom: 2px;
+    margin-left: 30px;
+    border-left: 3px solid #00293E;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+/*** Download ***/
+.variantHeader .variantDownload {
+    margin-right: 30px;
+}
+
+.variantHeader .variantDownload img {
+    width: 20px;
+}
+
+/*** Name ***/
+.variantHeader .variantName {
+    -ms-flex-preferred-size: 253px;
+    flex-basis: 253px;
+    position: relative;
+}
+
+.variantHeader .variantName p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.variantHeader .variantName .filterName {
+    min-width: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: #ffffff;
+    top: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.variantHeader .variantName .filterName input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 30%);
+    outline: none;
+    padding: 7px 0;
+    caret-color: #347CFF;
+}
+
+.variantHeader .variantName .filterName input:focus {
+    border-bottom: 1px solid #347CFF;
+}
+
+/*** Significance ***/
+.variantHeader .variantSignificance {
+    -ms-flex-preferred-size: 297px;
+    flex-basis: 297px;
+}
+
+.variantHeader .variantSignificance p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.variantHeader .variantSignificance .filterSignificance {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    top: 129px;
+    padding: 7px 17px 17px 17px;
+    background-color: #ffffff;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.variantHeader .variantSignificance .filterSignificance div {
+    position: relative;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.variantHeader .variantSignificance .filterSignificance div input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+}
+
+.variantHeader .variantSignificance .filterSignificance div label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.variantHeader .variantSignificance .filterSignificance div input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #2962FF;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.variantHeader .variantSignificance .filterSignificance div input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 9px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*** Genotype ***/
+.variantHeader .variantGenotype {
+    -ms-flex-preferred-size: 278px;
+    flex-basis: 278px;
+    position: relative;
+}
+
+.variantHeader .variantGenotype p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.variantHeader .variantGenotype .filterGenotype {
+    min-width: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    padding: 7px 17px 17px 17px;
+    background-color: #ffffff;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.variantHeader .variantGenotype .filterGenotype .radioContainer {
+    margin-top: 10px;
+}
+
+.variantHeader .variantGenotype .filterGenotype .radioContainer input {
+    display: none;
+}
+
+.variantHeader .variantGenotype .filterGenotype .radioContainer input+label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.variantHeader .variantGenotype .filterGenotype .radioContainer input+label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2962FF;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.variantHeader .variantGenotype .filterGenotype .radioContainer input:checked+label::before {
+    background-color: #2962FF;
+    -webkit-box-shadow: 0px 0px 0px 3px #ffffff inset;
+    box-shadow: 0px 0px 0px 3px #ffffff inset;
+}
+
+/*** HGVS ***/
+.variantHeader .variantHGVS {
+    position: relative;
+    min-width: 200px;
+}
+
+.variantHeader .variantHGVS p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.variantHeader .variantHGVS .filterHGWS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    padding: 7px 17px 17px 17px;
+    background-color: #ffffff;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23), 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.variantHeader .variantHGVS .filterHGWS .radioContainer {
+    margin-top: 10px;
+}
+
+.variantHeader .variantHGVS .filterHGWS .hgwsInput {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+.variantHeader .variantHGVS .filterHGWS .hgwsInput input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 30%);
+    outline: none;
+    padding: 7px 0;
+    caret-color: #347CFF;
+}
+
+.variantHeader .variantHGVS .filterHGWS .hgwsInput input:focus {
+    border-bottom: 1px solid #347CFF;
+}
+
+.variantHeader .variantHGVS .filterHGWS .radioContainer input {
+    display: none;
+}
+
+.variantHeader .variantHGVS .filterHGWS .radioContainer input+label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.variantHeader .variantHGVS .filterHGWS .radioContainer input+label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2962FF;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.variantHeader .variantHGVS .filterHGWS .radioContainer input:checked+label::before {
+    background-color: #2962FF;
+    -webkit-box-shadow: 0px 0px 0px 3px #ffffff inset;
+    box-shadow: 0px 0px 0px 3px #ffffff inset;
+}
+
+/*** ExternalSource ***/
+.variantHeader .variantExternalSource {
+    position: relative;
+    text-align: end;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+.variantHeader .variantExternalSource p {
+
+}
+
+.variantHeader .variantExternalSource .promptLogo {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: #2962FF;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*** Prompt ***/
+.variantHeader .variantExternalSource .prompt {
+    display: none;
+}
+
+.promptLogo:hover + .prompt {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 6px 12px 2px 12px;
+    bottom: 40px;
+    right: -20px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.variantHeader .variantExternalSource .prompt p {
+    width: 140px;
+    margin-bottom: 5px;
+    padding: 2px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.variantHeader .variantExternalSource .prompt .item1 {
+    background-color: rgba(41, 98, 255, 0.8);
+}
+
+.variantHeader .variantExternalSource .prompt .item2 {
+    background-color: rgba(107, 48, 201, 0.8);
+}
+
+.variantHeader .variantExternalSource .prompt .item3 {
+    background-color: rgba(252, 104, 40, 0.8);
+}
+
+/*** Медиа-запросы для экранов от 1504px до 1804px ***/
+@media screen and (min-width: 1504px) and (max-width: 1804px) {
+    /*** Name ***/
+    .variantHeader .variantName {
+        -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    }
+
+    /*** Significance ***/
+    .variantHeader .variantSignificance {
+        -ms-flex-preferred-size: 185px;
+        flex-basis: 185px;
+    }
+
+    /*** Genotype ***/
+    .variantHeader .variantGenotype {
+        -ms-flex-preferred-size: 185px;
+        flex-basis: 185px;
+    }
+}
+
+/*** Медиа-запросы для экранов от 0px до 1503px ***/
+@media screen and (min-width: 0px) and (max-width: 1503px) {
+    /*** Name ***/
+    .variantHeader .variantName {
+        -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+    }
+
+    /*** Significance ***/
+    .variantHeader .variantSignificance {
+        -ms-flex-preferred-size: 155px;
+        flex-basis: 155px;
+    }
+
+    /*** Genotype ***/
+    .variantHeader .variantGenotype {
+        -ms-flex-preferred-size: 165px;
+        flex-basis: 165px;
+    }
+}

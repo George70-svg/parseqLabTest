@@ -1,0 +1,207 @@
+.itemContainer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 20px;
+    border-bottom: 1px solid #A5A5A5;
+    color: #2962FF;
+    font-weight: 500;
+}
+
+
+/*** Download ***/
+.itemContainer .itemCheckbox {
+    margin-right: 30px;
+}
+
+.itemContainer .itemCheckbox input[type="checkbox"] {
+    cursor: pointer;
+    margin: 3px;
+}
+
+.itemContainer .itemCheckbox input[type="checkbox"]:checked::before {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #2962FF;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.itemContainer:last-child {
+    border-bottom: none;
+}
+
+/*** Name ***/
+.itemContainer .itemName {
+    flex-basis: 253px;
+}
+
+/*** Significance ***/
+.itemContainer .itemSignificance {
+    flex-basis: 297px;
+}
+
+/*** Genotype ***/
+.itemContainer .itemGenotype {
+    flex-basis: 278px;
+}
+
+/*** HGVS ***/
+.itemContainer .itemsHGVS {
+    display: flex;
+}
+
+.itemContainer .itemsHGVS .item {
+    display: flex;
+}
+
+.itemContainer .itemsHGVS .item:not(:first-child) {
+    /*margin-left: 20px;*/
+}
+
+.itemContainer .itemsHGVS .item div {
+    padding: 0 8px 2px 8px;
+    line-height: 23px;
+    background-color: #2962FF;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.itemContainer .itemsHGVS .g div {
+    background-color: rgba(255, 61, 84, 0.8);
+}
+
+.itemContainer .itemsHGVS .g p {
+    min-width: 150px;
+}
+
+.itemContainer .itemsHGVS .c div {
+    background-color: rgba(0, 191, 141, 0.8);
+}
+
+.itemContainer .itemsHGVS .c p {
+    min-width: 100px;
+}
+
+.itemContainer .itemsHGVS .p div {
+    background-color: rgba(41, 98, 255, 0.8);
+}
+
+.itemContainer .itemsHGVS .p p {
+    min-width: 75px;
+}
+
+.itemContainer .itemsHGVS .item p {
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+/*** Source ***/
+.itemContainer .itemSource {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    flex-basis: 370px;
+}
+
+.itemContainer .itemSource div {
+    font-size: 14px;
+    display: flex;
+    flex-basis: 370px;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.itemContainer .itemSource div a {
+    display: flex;
+    align-items: center;
+    flex-basis: content;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgba(41, 98, 255, 0.8);
+}
+
+.itemContainer .itemSource div a .nameCategory {
+    flex-grow: 1;
+    flex-basis: content;
+    padding: 1px 7px;
+    color: #ffffff;
+}
+
+.itemContainer .itemSource div a .arrow {
+    flex-basis: content;
+    width: 0;
+    height: 0;
+    margin: 0 4px 1px 0;
+    border-top: 6px solid transparent;
+    border-left: 9px solid #ffffff;
+    border-bottom: 6px solid transparent;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.itemContainer .itemSource div .custom {
+    background-color: rgba(107, 48, 201, 0.8);
+}
+
+.itemContainer .itemSource div .locusSpecific {
+    background-color: rgba(252, 104, 40, 0.8);
+}
+
+/*** Медиа-запросы для экранов от 1504px до 1804px ***/
+@media screen and (min-width: 1504px) and (max-width: 1804px) {
+    .itemContainer {
+        font-size: 14px;
+    }
+
+    /*** Name ***/
+    .itemContainer .itemName {
+        flex-basis: 200px;
+    }
+
+    /*** Significance ***/
+    .itemContainer .itemSignificance {
+        flex-basis: 185px;
+    }
+
+    /*** Genotype ***/
+    .itemContainer .itemGenotype {
+        flex-basis: 185px;
+    }
+
+    /*** HGWS ***/
+    .itemContainer .itemsHGVS .item div {
+       font-size: 16px;
+    }
+}
+
+/*** Медиа-запросы для экранов от 0px до 1503px ***/
+@media screen and (min-width: 0px) and (max-width: 1503px) {
+    .itemContainer {
+        font-size: 12px;
+    }
+
+    /*** Name ***/
+    .itemContainer .itemName {
+        flex-basis: 120px;
+    }
+
+    /*** Significance ***/
+    .itemContainer .itemSignificance {
+        flex-basis: 155px;
+    }
+
+    /*** Genotype ***/
+    .itemContainer .itemGenotype {
+        flex-basis: 165px;
+    }
+
+    /*** HGWS ***/
+    .itemContainer .itemsHGVS .item div {
+        font-size: 16px;
+    }
+}

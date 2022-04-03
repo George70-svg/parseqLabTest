@@ -1,0 +1,82 @@
+.paginatorContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 3px;
+    padding: 37px 0px 40px 2px;
+    background-color: #fafafa;
+}
+
+.paginatorContainer .arrow {
+    width: 14px;
+    height: 14px;
+    border-top: 3px solid #347CFF;
+    margin-bottom: 4px;
+    border-left: 3px solid #347CFF;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.paginatorContainer .leftArrow {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.paginatorContainer .pageNumber {
+    text-align: center;
+    margin: 3px 15px 7px 10px;
+    color: #00293E;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.paginatorContainer .pageNumber span {
+    margin-left: 10px;
+}
+
+.paginatorContainer .rightArrow {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.paginatorContainer input {
+    width: 30px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 30%);
+    outline: none;
+    padding: 0 0 3px 0;
+    caret-color: #347CFF;
+    background-color: #fafafa;
+    color: #00293E;
+}
+
+.paginatorContainer input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.paginatorContainer input[type="number"]::-webkit-outer-spin-button,
+.paginatorContainer input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.paginatorContainer .disabledArrow {
+    border-top: 3px solid #3C474C;
+    border-left: 3px solid #3C474C;
+}

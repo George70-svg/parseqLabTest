@@ -1,0 +1,19 @@
+.geneticContainer {
+    height: calc(100vh - 80px);
+    background-color: #fafafa;
+    position: relative;
+}
+
+.geneticContainer .shadow {
+    pointer-events: none;
+}
+
+.geneticContainer .shadow .variantHeader {
+    -webkit-filter: grayscale(30%) contrast(50%) blur(2px);
+    filter: grayscale(30%) contrast(50%) blur(2px);
+}
+
+.geneticContainer .shadow .listContainer {
+    -webkit-filter: grayscale(30%) contrast(50%) blur(2px);
+    filter: grayscale(30%) contrast(50%) blur(2px);
+}

@@ -1,0 +1,22 @@
+.analyzesContainer {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+    width: 50%;
+    text-align: center;
+}
+
+.analyzesContainer h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    color: #00293E;
+}
+
+.analyzesContainer img {
+    width: 80%;
+    pointer-events: none;
+}

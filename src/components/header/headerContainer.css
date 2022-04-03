@@ -1,0 +1,68 @@
+header {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #00293E;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header .logoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .logoContainer img {
+    width: 60px;
+    height: 60px;
+}
+
+header .logoContainer p {
+    margin-left: 20px;
+}
+
+header .linkContainer {
+    margin-left: 60px;
+}
+
+header .linkContainer a {
+    margin-right: 28px;
+    padding-bottom: 2px;
+}
+
+header .linkContainer a.router-link-active {
+    border-bottom: 2px solid white;
+}
+
+header .linkContainer a:last-child {
+    margin-right: 0;
+}
+
+header .buttonContainer {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-right: 20px;
+    text-align: end;
+}
+
+header .buttonContainer button {
+    padding: 10px 30px;
+    background-color: #00BF8D;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header .buttonContainer button:hover {
+    background-color: #00a679;
+}
